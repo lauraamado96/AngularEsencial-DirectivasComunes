@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from './../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Directivas_comunes';
+  title='Titulo';
+  
+  valor1:boolean;
+  valor2:boolean;
+  color:string;
+  diasSemana:any
+  
+  constructor(){
+
+    this.valor1=  false
+    this.valor2 = true
+    this.color ='';
+  }
+
 }
